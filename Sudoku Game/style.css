@@ -9,3 +9,9 @@
     align-content: space-evenly ; 
     margin: 0 auto;
 }
+
+#generate-sudoku
+{
+    margin:auto;
+    display:block;;
+}
