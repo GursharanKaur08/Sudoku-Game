@@ -41,33 +41,18 @@
     background-color: lightskyblue;
 }
 
-.lsb{
-    border-left: black 2px solid;
-}
+.lsb{    border-left: black 2px solid;   }
 
-.bsb{
-    border-bottom: black 2px solid;
-}
+.bsb{    border-bottom: black 2px solid;    }
 
-.rsb{
-    border-right: black 2px solid;
-}
+.rsb{    border-right: black 2px solid;    }
 
-.tsb{
-    border-top: black 2px solid;
-}
+.tsb{    border-top: black 2px solid;   }
 
-
-.ldb{
-    border-left: black 0.6px dashed;
-}
+.ldb{    border-left: black 0.6px dashed;   }
 
 .bdb{    border-bottom: black 0.6px dashed;   }
 
-.rdb{
-    border-right: black 0.6px dashed;
-}
+.rdb{    border-right: black 0.6px dashed;  }
 
-.tdb{
-    border-top: black 0.6px dashed;
-}
+.tdb{    border-top: black 0.6px dashed;    }
