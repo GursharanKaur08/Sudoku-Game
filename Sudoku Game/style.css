@@ -1,6 +1,5 @@
 #container
-{
-    height: auto;
+{   height: auto;
     width: 540px;
     background-color: white;
     display: flex;
@@ -11,20 +10,17 @@
 }
 
 #generate-sudoku
-{
-    margin:auto;
+{   margin:auto;
     display:block;;
 }
 
 #solve
-{
-    margin:auto;
+{   margin:auto;
     display:block;;
 }
 
 #container div
-{
-    background-color: whitesmoke;
+{   background-color: whitesmoke;
     height: 60px;
     width: 60px;
     box-sizing: border-box;
@@ -37,8 +33,7 @@
 }
 
 #container div:hover
-{
-    background-color: lightskyblue;
+{   background-color: lightskyblue;
 }
 
 .lsb{    border-left: black 2px solid;   }
