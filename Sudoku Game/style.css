@@ -1,0 +1,10 @@
+#container{
+    height: auto;
+    width: 540px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly ; 
+    margin: 0 auto;
+}
