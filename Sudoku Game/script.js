@@ -55,14 +55,13 @@ let button = document.getElementById('generate-sudoku')
 let solve = document.getElementById('solve')
 
 console.log(arr)
-function changeBoard(board) {
-    for (var i = 0; i < 9; i++) {
-        for (var j = 0; j < 9; j++) {
-            if (board[i][j] != 0) {
-
+function changeBoard(board) 
+{   for (var i = 0; i < 9; i++) 
+    {   for (var j = 0; j < 9; j++) 
+        {   if (board[i][j] != 0) 
+            {
                 arr[i][j].innerText = board[i][j]
             }
-
             else
                 arr[i][j].innerText = ''
         }
