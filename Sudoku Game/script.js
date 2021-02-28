@@ -67,3 +67,13 @@ function changeBoard(board)
         }
     }
 }
+
+function solveSudoku(board) 
+{
+    solveSudokuHelper(board, 0, 0)
+}
+
+solve.onclick = function () 
+{
+    solveSudoku(board)
+}
