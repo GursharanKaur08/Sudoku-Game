@@ -113,7 +113,30 @@ function isPossible(board, sr, sc, val)
         }
     }
     return true;
+}
 
+function solveSudokuHelper(board, sr, sc) {
+    if (sr == 9) {
+        changeBoard(board);
+        return;
+    }
+    if (sc == 9) {
+        solveSudokuHelper(board, sr + 1, 0)
+        return;
+    }
+
+    if (board[sr][sc] != 0) {
+        solveSudokuHelper(board, sr, sc + 1);
+        return;
+    }
+
+    for (var i = 1; i <= 9; i++) {
+        if (isPossible(board, sr, sc, i)) {
+            board[sr][sc] = i;
+            solveSudokuHelper(board, sr, sc + 1);
+            board[sr][sc] = 0;
+        }
+    }
 }
 
 
