@@ -68,6 +68,26 @@ function changeBoard(board)
     }
 }
 
+button.onclick = function () 
+{
+    var xhrRequest = new XMLHttpRequest()
+    xhrRequest.onload = function () {
+        var response = JSON.parse(xhrRequest.response)
+        console.log(response)
+        initializeTemp(temp)
+        resetColor()
+
+        board = response.board
+        setTemp(board, temp)
+        setColor(temp)
+        changeBoard(board)
+    }
+    xhrRequest.open('get', 'https://sugoku.herokuapp.com/board?difficulty=easy')
+    //we can change the difficulty of the puzzle the allowed values of difficulty are easy, medium, hard and random
+    xhrRequest.send()
+}
+
+
 function solveSudoku(board) 
 {
     solveSudokuHelper(board, 0, 0)
