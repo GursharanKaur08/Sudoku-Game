@@ -86,15 +86,17 @@ button.onclick = function ()
     xhrRequest.send()
 }
 
-function isPossible(board, sr, sc, val) {
-    for (var row = 0; row < 9; row++) {
-        if (board[row][sc] == val) {
+function isPossible(board, sr, sc, val) 
+{   for (var row = 0; row < 9; row++) 
+    {   if (board[row][sc] == val) 
+        {
             return false;
         }
     }
 
-    for (var col = 0; col < 9; col++) {
-        if (board[sr][col] == val) {
+    for (var col = 0; col < 9; col++) 
+    {   if (board[sr][col] == val) 
+        {
             return false;
         }
     }
@@ -102,9 +104,10 @@ function isPossible(board, sr, sc, val) {
     var r = sr - sr % 3;
     var c = sc - sc % 3;
 
-    for (var cr = r; cr < r + 3; cr++) {
-        for (var cc = c; cc < c + 3; cc++) {
-            if (board[cr][cc] == val) {
+    for (var cr = r; cr < r + 3; cr++) 
+    {   for (var cc = c; cc < c + 3; cc++) 
+        {   if (board[cr][cc] == val) 
+            {
                 return false;
             }
         }
