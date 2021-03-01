@@ -69,10 +69,9 @@ function changeBoard(board)
 }
 
 button.onclick = function () 
-{
-    var xhrRequest = new XMLHttpRequest()
-    xhrRequest.onload = function () {
-        var response = JSON.parse(xhrRequest.response)
+{   var xhrRequest = new XMLHttpRequest()
+    xhrRequest.onload = function () 
+    {   var response = JSON.parse(xhrRequest.response)
         console.log(response)
         initializeTemp(temp)
         resetColor()
@@ -90,7 +89,7 @@ button.onclick = function ()
 
 function solveSudoku(board) 
 {
-    solveSudokuHelper(board, 0, 0)
+        solveSudokuHelper(board, 0, 0)
 }
 
 solve.onclick = function () 
