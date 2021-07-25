@@ -1,4 +1,1 @@
-# Data-Structure-Projects
-
-
--> Sudoku Game
+# Sudoku Game
